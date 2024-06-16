@@ -30,16 +30,16 @@ export default function Home() {
     return (
         <div className={styles.container}>
             <div className={styles.body}>
-                <div className={`${playfair.className} flex flex-col items-center justify-center leading-[77px]`}>
+                <div className={`${playfair.className} flex flex-col items-center justify-center leading-[1] lg:leading-[77px]`}>
                     <div className={'flex gap-3'}>
-                        <p><span className={`${gwendolyn.className} text-[140px] mr-3`}>P</span>iero</p>
-                        <p><span className={`${gwendolyn.className} text-[140px] mr-3`}>M</span>arcos</p>
+                        <p><span className={`${gwendolyn.className} text-[48px] lg:text-[140px] mr-1.5 lg:mr-3`}>P</span>iero</p>
+                        <p><span className={`${gwendolyn.className} text-[48px] lg:text-[140px] mr-1.5 lg:mr-3`}>M</span>arcos</p>
                     </div>
                     <p>FULLSTACK DEVELOPER</p>
-                    <p className={`${vt323.className} text-[110px]`}>☼Developer☀</p>
+                    <p className={`${vt323.className} text-[50px] lg:text-[110px]`}>☼Developer☀</p>
                     <p>CURRENTLY</p>
-                    <p className={`${vt323.className} text-[110px]`}>FOLIO<span className={`${gwendolyn.className} text-[110px]`}>©️</span>2024<span
-                        className={`${vt323.className} text-[110px]`}>⚗✨</span></p>
+                    <p className={`${vt323.className} text-[50px] lg:text-[110px]`}>FOLIO<span className={`${gwendolyn.className} text-[50px] lg:text-[110px]`}>©️</span>2024<span
+                        className={`${vt323.className} text-[50px] lg:text-[110px]`}>⚗✨</span></p>
                 </div>
             </div>
             <div className={styles.grid}>

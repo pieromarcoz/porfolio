@@ -13,35 +13,7 @@ export default function Home() {
         target: container,
         offset: ["start start", "end end"]
     })
-    /*const [endProgress, setEndProgress] = useState(false);
-    useEffect(() => {
-        const calculateEndScrollWindowandChangueState = () => {
-            const scrollWindow = window.innerHeight - window.innerHeight * 0.8;
-            const endScroll = scrollWindow * 0.2;
-            if (scrollYProgress.get() >= endScroll) {
-                setEndProgress(true);
-            }
-        }
-        calculateEndScrollWindowandChangueState();
-        window.addEventListener('scroll', calculateEndScrollWindowandChangueState);
-        return () => {
-            window.removeEventListener('scroll', calculateEndScrollWindowandChangueState);
-        }
-    }, [scrollYProgress])
-    useEffect(() => {
-        if (endProgress) {
-            const scrollWindow = window.innerHeight - window.innerHeight * 0.8;
-            const endScroll = scrollWindow * 0.2;
-            scrollYProgress.set(endScroll);
-        }
-    }, [endProgress])
-    useEffect(() => {
-        const scrollWindow = window.innerHeight - window.innerHeight * 0.8;
-        const endScroll = scrollWindow * 0.2;
-        if (scrollYProgress.get() >= endScroll) {
-            setEndProgress(true);
-        }
-    }, [scrollYProgress])*/
+
 
     return (
         <main ref={container} className="relative h-[200vh]">

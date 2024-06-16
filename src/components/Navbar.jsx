@@ -34,10 +34,8 @@ export default function Navbar() {
         <nav className={'flex fixed top-0 z-20 justify-between items-center w-full p-5 bg-oscuro *:text-white '}>
             <p className={'text-xs'}>PIERO MARCOS</p>
             <div className={'flex gap-3'}>
-                <p className={'text-xs'}>LINKEDIN</p>
-                <p className={'text-xs'}>GITHUB</p>
-                <p className={'text-xs'}>TWITTER</p>
-                <p className={'text-xs'}>2024✨</p>
+                <a href={'https://www.linkedin.com/in/piero-marcos-142796232/'} target={"_blank"} className={'text-xs'}>LINKEDIN</a>
+                <a href={'https://github.com/pieromarcoz'} target={"_blank"} className={'text-xs'}>GITHUB</a>
             </div>
         </nav>
     )

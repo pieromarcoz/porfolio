@@ -18,8 +18,8 @@
 }
 
 .container .body{
-    padding-top: calc(8vw + 200px);
-    font-size: 70px;
+    padding-top: calc(5vw + 200px);
+    @apply text-3xl lg:text-[70px];
     text-align: center;
     font-weight: 400;
     width: 70%;
