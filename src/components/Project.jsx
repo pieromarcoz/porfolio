@@ -3,7 +3,7 @@ import {Playfair_Display, Inter} from "next/font/google";
 import {Accordion, AccordionContent, AccordionItem, AccordionTrigger} from "@/components/ui/accordion";
 import {useEffect, useState} from "react";
 import Image from "next/image";
-import {Copy} from "lucide-react";
+import {Copy, ExternalLink} from "lucide-react";
 import {Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "./ui/tooltip";
 
 const playfair = Playfair_Display({subsets: ["latin"], weight: '400'});
@@ -55,7 +55,34 @@ export default function Project({scrollYProgress}) {
             copyCredentialsdemoCMS: "admin@gmail.com admin123",
             stack: ["Next.js 14", "tRPC", "TypeScript", "Payload CMS", "shadcn", "Tailwind CSS"],
             images: ["/digital1.webp", "/digital3.png", "/digital5.png"]
-        }
+        },
+        {
+            value: "item-3",
+            project: "Ecommerce",
+            year: "2024",
+            description: "Built an e-commerce platform with Laravel 10, Livewire 3, Filament 3, and Tailwind CSS. Features user and admin panels with full product management, cart functionality, order processing, and analytics. Demonstrates modern web development techniques for responsive and dynamic e-commerce solutions.",
+            demo: "https://phplaravel-1180651-4138879.cloudwaysapps.com/",
+            stack: ["Laravel", "Livewire", "Filament", "Tailwind CSS", "Stripe"],
+            images: ["/ecommerce.png", "/ecommerce3.png", "/ecommerce4.png"]
+        },
+        {
+            value: "item-4",
+            project: "Cotizador Criptos",
+            year: "2023",
+            description: "Developed a React-based cryptocurrency price tracker. The app fetches real-time data from the CryptoCompare API, allowing users to select a currency and cryptocurrency pair. It displays current price, daily high/low, 24-hour variation, and last update time. Utilizes React hooks for state management and API integration, providing instant, up-to-date cryptocurrency market information.",
+            demo: "https://criptos-pieromg.vercel.app/",
+            stack: ["React JS"],
+            images: ["/cripto.png", "/cripto2.png"]
+        },
+        {
+            value: "item-5",
+            project: "Tesla Landing",
+            year: "2023",
+            description: "Developed a Tesla home page replica with advanced design and navigation. Used Intersection Observer for dynamic navigation bar text color based on visible section. Implemented CSS scroll-snap-type for smooth, centered scrolling on sliders, enhancing image transitions.",
+            demo: "https://testa-pieromg.netlify.app/",
+            stack: ["Astro", "Tailwind CSS"],
+            images: ["/testa.webp"]
+        },
     ];
     const [hoveredIndex, setHoveredIndex] = useState(null);
 
@@ -98,12 +125,12 @@ export default function Project({scrollYProgress}) {
                                         className={`relative z-10 p-4 transition-colors duration-300`}>
                                         <div
                                             className={'flex flex-col space-y-4 *:text-black items-start [&>:not(:last-child)]:max-w-2xl'}>
-                                            <p className={'text-xl leading-6 text-start'}>{item.description}</p>
+                                            <p className={'text-lg leading-6 text-start'}>{item.description}</p>
                                             <div className={'flex gap-3 items-center'}>
                                                 <a href={item.demo} target={'_blank'} rel={'noreferrer'}
-                                                   className={'underline'}>Live demo</a>
+                                                   className={'underline flex gap-0.5 items-center group'}>Live demo <ExternalLink width={15} height={15}/></a>
                                                 {item.demoCMS && <a href={item.demoCMS} target={'_blank'} rel={'noreferrer'}
-                                                                    className={'underline'}>CMS demo</a>}
+                                                                    className={'underline flex gap-0.5 items-center group'}>CMS demo  <ExternalLink width={15} height={15}/></a>}
                                                 {item.copyCredentialsdemoCMS &&
                                                     <TooltipProvider>
                                                         <Tooltip>
