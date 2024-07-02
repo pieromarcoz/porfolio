@@ -10,14 +10,14 @@ export default function Navbar() {
             if (window.scrollY >= scrollWindow) {
                 nav.style.backgroundColor = '#FFFFFF';
                 nav.style.transition = 'background-color 0.2s ease-in-out';
-                document.querySelectorAll('nav p').forEach(p => {
+                document.querySelectorAll('nav *').forEach(p => {
                     p.style.color = '#000000';
                     p.style.transition = 'color 0.2s ease-in-out';
                 })
             } else {
                 nav.style.backgroundColor = 'rgba(18, 18, 18)';
                 nav.style.transition = 'background-color 0.2s ease-in-out';
-                document.querySelectorAll('nav p').forEach(p => {
+                document.querySelectorAll('nav *').forEach(p => {
                     p.style.color = '#FFFFFF';
                     p.style.transition = 'color 0.2s ease-in-out';
                 })
